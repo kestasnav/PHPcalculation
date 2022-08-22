@@ -7,11 +7,11 @@
   
     $metai=$_POST['metai'];
     if ($metai % 4 == 0 && $metai >= $olimpiadosPradzia){
-        $out="Olimpiniai metai Nr.";
+        $out="$metai metai: Olimpiniai metai, Nr.";
         $skaicius=(($metai - $olimpiadosPradzia) / 4) + 1;
        
     }else{
-        $out="Neolimpiniai metai";
+        $out="$metai Neolimpiniai metai";
         $skaicius="";
     }
  
